@@ -1,20 +1,21 @@
-(define (problem car_collision)
-	(:domain junction)
-	(:objects
-	red_car - car
-	blue_car - car
-	pos_r_1 - position
-	pos_r_2 - position
-	pos_b_1 - position
-	pos_b_2 - position
-	pos_collision - position
-	)
+(define (problem accident_scenario)
+  (:domain junction)
+  (:objects
+    red_car - car
+    blue_car - car
+    init_pos_red - position
+    init_pos_blue - position
+    dest_pos_cross_red - position
+    dest_pos_cross_blue - position
+    dest_pos_collision - position
+  )
 
-	(:init
-		(on red_car pos_r_1)
-		(on blue_car pos_b_1)
-	)
-	(:goal 
-		(collision red_car blue_car pos_collision)
-	)
+  (:init
+    (on red_car init_pos_red)
+    (on blue_car init_pos_blue)
+  )
+
+  (:goal
+    (accident red_car blue_car dest_pos_collision)
+  )
 )
