@@ -1,4 +1,4 @@
-(define (problem accident)
+(define (problem crossing_scenario)
   (:domain junction)
   (:objects
     red_car - car
@@ -16,6 +16,6 @@
   )
 
   (:goal
-    (accident red_car blue_car dest_pos_collision)
+    (crossing red_car blue_car dest_pos_cross_red dest_pos_cross_blue)
   )
 )
