@@ -31,7 +31,10 @@
       (?car1 - car
        ?car2 - car
        ?pos1 - position
-       ?pos2 - position)
+       ?pos2 - position
+       ?pos_1_dest - position
+       ?pos_2_dest - position
+      )
     :precondition
       (and 
         (on ?car1 ?pos1)
@@ -39,7 +42,7 @@
       )
     :effect
       (and 
-        (crossing ?car1 ?car2 ?pos1 ?pos2)
+        (crossing ?car1 ?car2 ?pos_1_dest ?pos_2_dest)
       )
   )
 
