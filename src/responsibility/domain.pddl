@@ -8,6 +8,7 @@
       (do ?a - agent ?act - action ?t - time)      
       )
 
+  
    (:action lift
     :parameters (?a - agent ?o - table ?act - action ?t - time)
     :precondition (and (not (lifted ?o)) (at ?a ?o))

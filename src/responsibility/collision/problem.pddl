@@ -1,0 +1,12 @@
+(define (problem junction-problem)
+  (:domain junction)
+  (:objects blue red - car)
+  (:init
+    (at-junction blue)
+    (at-junction red)
+    (not (crossed blue))
+    (not (crossed red))
+    (not (collision))
+  )
+  (:goal (collision))
+)
