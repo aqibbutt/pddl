@@ -14,6 +14,9 @@
 		(path table plate)
 	)
 	(:goal 
+		(and
 		(on cupcake plate)
+		; (not (on cupcake plate))
+		)
 	)
 )
