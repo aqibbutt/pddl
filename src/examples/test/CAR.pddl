@@ -19,5 +19,5 @@
       (at blue_car loc3 t2)
       (collision t2)
     )
-  )
+  ) 
 )
